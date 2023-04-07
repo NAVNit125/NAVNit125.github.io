@@ -3,10 +3,11 @@
   margin:0;
   padding:0;
   /* box-sizing:border-box; */
+  scroll-behavior:smooth;
 }
 
-/* html{
-  scroll-behavior: smooth;
+/* html {
+  scroll-behavior:smooth;
 } */
 
 :root{
@@ -133,7 +134,7 @@ a{
 }
 
 .btn-pink {
-  background-color: var(--bgOrange);
+  background-color: #e84949;
   width: fit-content;
   color: black;
   padding: 0.8rem 2.3rem;
@@ -184,7 +185,7 @@ a{
   animation: scaleImage 5s linear infinite;
 }
 
-.user-image{
+ .user-image{
   z-index:-9;
 }
 
@@ -631,6 +632,195 @@ a{
   cursor: pointer;
 
   }
+
+  @media (max-width:1300px) {
+    .container{
+      width:100%;
+    }
+
+    .navbar{
+      width: 100%;
+      display: flex;
+
+      gap:5px;
+    }
+    .nav-items{
+      width: 100%;
+      padding: 7px;
+      gap:15px;
+      margin-left: 4rem;
+    }
+    /* .moon-icon{
+      position: absolute;
+      right: 4px;
+      top:5px
+    } */
+
+    .hero-section{
+      width:100%;
+      display: flex;
+      flex-direction:column;
+    }
+    
+    .hero-section-left{
+     width: 100%;
+     margin-right:100px ;
+    }
+
+    .hero-section-right{
+      width: 100%;
+      margin-right:200px;
+    }
+    .faded-text{
+    width: 0%;
+    font-size: 0%;
+    }
+
+    .page-header {
+      padding-top: 30px;
+      color: var(--bgOrange);
+      text-align: center;
+      font-size: 40px;
+    }
+    .project-container {
+      padding: 5px;
+      margin: 10px;
+      gap: 60px;
+    }
+    .project-card {
+      width: 100%;
+      height: 300px;
+    }
+    .project-card {
+      background-size: cover;
+      background-position: center;
+    }
+    .project-content {
+      scale: 0.5;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      top: 0;
+    }
+    .project-content-left {
+      left: 0;
+    }
+    .project-heading {
+      font-size: 40px;
+      width: 100%;
+    }
+    .project-sub-heading {
+      width: 100%;
+    }
+    #project2 {
+      margin-left: 0;
+    }
+    #project4 {
+      margin-left: 0;
+    }
+    .project-skill-container {
+      width: 100%;
+    }
+    .project-skill {
+      width: 35px;
+    }
+    .project-card:hover .project-number {
+      display: none;
+    }
+    .project-card:hover .project-content {
+      scale: 0.55;
+    }
+
+    #skills{
+     display: flex;
+     flex-direction: column;
+     display: inline;
+    }
+
+    .skill-container-left{
+      width:100%;
+      margin-left: 2rem;
+    }
+
+    .skill-container-right{
+      width:100%;
+      height: 27%;
+      
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    /* gap:2rem; */
+    justify-content: center;
+    }
+
+    .skills-logo{
+      width:35px;
+      transition:all 0.5s;
+    }
+
+    /* #footer-container{
+      display:;
+    } */
+    .footer-faded-text{
+      width: 100%;
+      font-size:3rem;
+      
+    }
+    .footer-wrapper{
+      display:flex;
+      flex-direction: column;
+      margin-left:-5.2rem;
+      gap:55px;
+    }
+
+    .link-wrapper{
+      flex-direction: column;
+    }
+  }
+
+
+  /* span{
+    position: relative;
+    display: inline-flex;
+    width: 180px;
+    height: 55px;
+    margin: 0 15px;
+    perspective: 1000px;
+  }
+  span a{
+    font-size: 19px;
+    letter-spacing: 1px;
+    transform-style: preserve-3d;
+    transform: translateZ(-25px);
+    transition: transform .25s;
+    font-family: 'Montserrat', sans-serif;
+    
+  }
+  span a:before,
+  span a:after{
+    position: absolute;
+    content: "Hire me";
+    height: 55px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid black;
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+  span a:before{
+    color: #fff;
+    background: #000;
+    transform: rotateY(0deg) translateZ(25px);
+  }
+  span a:after{
+    color: #000;
+    transform: rotateX(90deg) translateZ(25px);
+  }
+  span a:hover{
+    transform: translateZ(-25px) rotateX(-90deg);
+  } */
 
 
   
